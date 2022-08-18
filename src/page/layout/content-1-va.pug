@@ -1,49 +1,47 @@
-div.container
-  div.dimmer
-  div.img__bg
-    img(src="src\img\Content-1-VA\Vinfast-Lux-SA-2-litres-02-2.webp", alt="")
-  //- Customer form
-  div.hover__bg#customerForm
-    div.customer__form
-      h3 LIÊN HỆ TƯ VẤN
-      div.input__field
-        input(type="text", placeholder="Tên")
-      div.input__field
-        input(type="email", placeholder="Email")
-      div.input__field
-        input(type="tel", placeholder="Điện thoại")
-      div.selection__field
-        select#(name="cars")
-          option(value="") Chọn loại xe
-          option(value="Fadil") Fadil
-          option(value="Lux A 2.0") Lux A 2.0
-          option(value="Lux SA 2.0") Lux SA 2.0
-      div.button 
-        button.test-drive__btn ĐĂNG KÝ    
-  //- INTRO
-  div.hover__bg#briefIntro
-    div.briefIntro__item
-      h3 VINFAST ĐỒNG NAI
-    div.briefIntro__item
-      h1 Lux SA 2.0
-    div.briefIntro__item
-      p Đoạn giới thiệu ngắn dòng xe LUX SA2.0 
-    div.briefIntro__item
-      div.briefIntro-item__content
-        div 
-          img(src="src\img\Content-1-VA\hộp-số-8-cấp.png", alt="")
-        p Hộp số 8 cấp
-      div.briefIntro-item__content
-        div 
-          img(src="src\img\Content-1-VA\228-mã-lực.png", alt="")
-        p 228 Mã lực
-      div.briefIntro-item__content
-        div 
-          img(src="src\img\Content-1-VA\mirrorlink.png", alt="")
-        p Smartphone Mirrorlink
-    div.briefIntro__item
-      button.test-drive__btn ĐĂNG KÝ LÁI THỬ
-
-<div class="container">
-//- Code ở trên
-script(type="module" src="../js/content-1-va.js") 
+.content-1__block
+      .container
+        .content-1__bg.crop
+          img(src='../img/Vinfast-Lux-SA-2-litres-02-2.webp' alt='' srcset='')
+      // 
+      .form-left__block.flex
+        .form-left__item
+          h3 VINFAST ĐỒNG NAI
+        .form-left__item
+          h1 LUX SA2.0
+          p Đoạn giới thiệu ngắn dòng xe Lux SA2.0
+        .form-left__item
+          .highlight-item__block.flex__row
+            .highlight__item.flex__row
+              .highlight-img
+                img(src='trans-8.png' alt='')
+              p Hộp số 8 cấp
+            .highlight__item.flex__row
+              .highlight-img
+                img(src='./228-hp.png' alt='')
+              p 228 Mã Lực
+            .highlight__item.flex__row
+              .highlight-img
+                img(src='./mirrorlink.png' alt='')
+              p Smartphone Mirrorlink
+        .form-left__item
+          button.test-drive__btn ĐĂNG KÝ LÁI THỬ
+      // 
+      .form-right__block
+        .form-right__content.flex
+          .form-right__item
+            h3 LIÊN HỆ TƯ VẤN
+          .form-right__item.flex
+            div
+              input.input(type='text' placeholder='Tên')
+            .input
+              input.input(type='email' placeholder='Email')
+            .input
+              input.input(type='tel' placeholder='Điện thoại')
+            div
+              select#cars.selection(name='cars')
+                option(value='') Chọn loại xe
+                option(value='Fadil') Fadil
+                option(value='Lux A 2.0') Lux A 2.0
+                option(value='Lux SA 2.0') Lux SA 2.0
+            div
+              button.test-drive__btn.register ĐĂNG KÝ
