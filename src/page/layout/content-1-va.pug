@@ -1,74 +1,40 @@
-.content-1__block
-      .container
-        .content-1__bg.crop
-          img(src='../img/Vinfast-Lux-SA-2-litres-02-2.webp' alt='' srcset='')
-      // 
-      .form-left__block.flex
-        .form-left__item
-          h3 VINFAST ĐỒNG NAI
-        .form-left__item
-          h1 LUX SA2.0
-          p Đoạn giới thiệu ngắn dòng xe Lux SA2.0
-        .form-left__item
-          .highlight-item__block.flex__row
-            .highlight__item.flex__row
-              .highlight-img
-                img(src='../img/trans-8.png' alt='')
-              p Hộp số 8 cấp
-            .highlight__item.flex__row
-              .highlight-img
-                img(src='../img/228-hp.png' alt='')
-              p 228 Mã Lực
-            .highlight__item.flex__row
-              .highlight-img
-                img(src='../img/mirrorlink.png' alt='')
-              p Smartphone Mirrorlink
-        .form-left__item
-          button.test-drive__btn ĐĂNG KÝ LÁI THỬ
-      // 
-      .form-right__block
-        .form-right__content.flex
-          .form-right__item
-            h3 LIÊN HỆ TƯ VẤN
-          .form-right__item.flex
-            div
-              input.input(type='text' placeholder='Tên')
-            .input
-              input.input(type='email' placeholder='Email')
-            .input
-              input.input(type='tel' placeholder='Điện thoại')
-            div
-              select#cars.selection(name='cars')
-                option(value='') Chọn loại xe
-                option(value='Fadil') Fadil
-                option(value='Lux A 2.0') Lux A 2.0
-                option(value='Lux SA 2.0') Lux SA 2.0
-            div
-              button.test-drive__btn.register ĐĂNG KÝ
- 
-      .container 
-          .content-1-pros__bg
-            img(src="../img/pro-background.jpg", alt="")
-      .pros__block.flex__row
-        .pros__content.flex
-          .pros__img
-            img(src="../img/pro-1.png", alt="")
-          .pros__item
-            h1 ƯU ĐIỂM 1
-            p Đoạn giới thiệu ngắn về ưu điểm xe. Similique minima magni quidem aliquid illo sequi
-        .pros__content.flex
-          .pros__img
-            img(src="../img/pro-2.png", alt="")
-          .pros__item
-            h1 ƯU ĐIỂM 2
-            p Đoạn giới thiệu ngắn về ưu điểm xe. Similique minima magni quidem aliquid illo sequi
-        .pros__content.flex
-          .pros__img
-            img(src="../img/pro-3.png", alt="")
-          .pros__item
-            h1 ƯU ĐIỂM 3
-            p Đoạn giới thiệu ngắn về ưu điểm xe. Similique minima magni quidem aliquid illo sequi
-      .pros__bg
+.background-container(style="background-image: url('../img/Vinfast-Lux-SA-2-litres-02-2.webp')")
+  // left
+  .left__container
+    h2.small-header VINFAST ĐỒNG NAI
+    h1.large-header LUX SA2.0
+    p.intro-content Đoạn giới thiệu ngắn dòng xe Lux SA2.0
+    .highlight__feature
+      .feature__tile
+        .img__feature
+          img(src='../img/trans-8.png' alt='')
+        |             Hộp số 8 cấp
+      .feature__tile
+        .img__feature
+          img(src='../img/228-hp.png' alt='')
+        |             228 Mã Lực
+      .feature__tile
+        .img__feature
+          img(src='../img/mirrorlink.png' alt='')
+        |             Smartphone Mirrorlink
+  // right
+  .right__container
+    h2.form-title LIÊN HỆ TƯ VẤN
+    form.flex-column
+      .input-tile
+        input#name(type='text' placeholder='Tên')
+      .input-tile
+        input#email(type='email' placeholder='Email')
+      .input-tile
+        input#tel(type='tel' placeholder='Điện thoại')
+      .input-tile
+        select.form-select(aria-label='Default select example')
+          option(selected='' disabled='' hidden='') Chọn loại xe
+          option(value='Fadil') Fadil
+          option(value='Lux A2.0') Lux A2.0
+          option(value='Lux SA2.0') Lux SA2.0
+    .reg-btn
+      button ĐĂNG KÝ
 
 //- Code ở trên
 script(type="module" src="../js/content-1-va.js") 
