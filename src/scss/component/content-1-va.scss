@@ -106,7 +106,7 @@ form {
   width: 100%;
 
   input {
-    padding-left: 5px;
+    padding: 5px;
     font-size: 1.25rem;
     width: 100%;
     border: none;
@@ -122,7 +122,11 @@ form {
     border-radius: 7px;
     color: #ffffff;
     background-color: #c4161c;
+    &:hover {
+        opacity: 0.7;
+      }
   }
+
 }
 
 /*  */
@@ -134,7 +138,7 @@ form {
   align-items: center;
   width: 300px;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
 }
 
 .img-tile {
