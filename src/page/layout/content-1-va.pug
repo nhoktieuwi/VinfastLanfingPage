@@ -1,3 +1,67 @@
+.background-container(style="background-image: url('../img/Vinfast-Lux-SA-2-litres-02-2.webp')")
+  // left
+  .left__container
+    h2.small-header VINFAST ĐỒNG NAI
+    h1.large-header LUX SA2.0
+    p.intro-content Đoạn giới thiệu ngắn dòng xe Lux SA2.0
+    .highlight__feature
+      .feature__tile
+        .img__feature
+          img(src='../img/trans-8.png' alt='')
+        |             Hộp số 8 cấp
+      .feature__tile
+        .img__feature
+          img(src='../img/228-hp.png' alt='')
+        |             228 Mã Lực
+      .feature__tile
+        .img__feature
+          img(src='../img/mirrorlink.png' alt='')
+        |             Smartphone Mirrorlink
+  // right
+  .right__container
+    h2.form-title LIÊN HỆ TƯ VẤN
+    form.flex-column
+      .input-tile
+        input#name(type='text' placeholder='Tên')
+      .input-tile
+        input#email(type='email' placeholder='Email')
+      .input-tile
+        input#tel(type='tel' placeholder='Điện thoại')
+      .input-tile
+        select.form-select(aria-label='Default select example')
+          option(selected='' disabled='' hidden='') Chọn loại xe
+          option(value='Fadil') Fadil
+          option(value='Lux A2.0') Lux A2.0
+          option(value='Lux SA2.0') Lux SA2.0
+    .reg-btn
+      button ĐĂNG KÝ
+// 
+.background-container__2(style="background-image: url('../img/back-banner.webp')")
+  .container.background-container__2
+    .content-tile
+      .img-tile
+        img(src='../img/pro-1.png' alt='')
+      .item-tile
+        h3 ƯU ĐIỂM 1
+        p
+          | Đoạn giới thiệu ngắn về ưu điểm xe. Lorem ipsum dolor sit amet
+          | consectetur adipisicing elit.
+    .content-tile
+      .img-tile
+        img(src='../img/pro-2.png' alt='')
+      .item-tile
+        h3 ƯU ĐIỂM 2
+        p
+          | Đoạn giới thiệu ngắn về ưu điểm xe. Lorem ipsum dolor sit amet
+          | consectetur adipisicing elit.
+    .content-tile
+      .img-tile
+        img(src='../img/pro-3.png' alt='')
+      .item-tile
+        h3 ƯU ĐIỂM 3
+        p
+          | Đoạn giới thiệu ngắn về ưu điểm xe. Lorem ipsum dolor sit amet
+          | consectetur adipisicing elit.
 
 //- Code ở trên
 script(type="module" src="../js/content-1-va.js") 
