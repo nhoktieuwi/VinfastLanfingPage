@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){new Splide(".splide",{rewind:!0}).mount()});
